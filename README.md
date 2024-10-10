@@ -2,6 +2,7 @@
 
 Author:https://www.gubo.org/debian-lemp-script/ & Actgod
 
+one key script to install lnmp on tiny small ram vps.
 backup only.
 
 # Debian 10 五分钟/一键安装Wordpress
