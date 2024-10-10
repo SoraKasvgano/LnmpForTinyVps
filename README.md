@@ -1,6 +1,6 @@
 # LnmpForTinyVps
 
-Author:https://www.gubo.org/debian-lemp-script/
+Author:https://www.gubo.org/debian-lemp-script/ & Actgod
 
 backup only.
 
