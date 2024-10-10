@@ -51,3 +51,44 @@ bash tylemp.sh sshport 22022 #更改ssh端口号22022，建议更改10000以上�
 bash tylemp.sh rainloop www.yourdomain.com  # 增加Gmail的web客户端一键安装
 bash tylemp.sh carbon www.yourdomain.com  # 增加Carbon Forum的一键安装
 ```
+
+
+## 配置文件列表
+
+```
+/etc/nginx/nginx.conf #nginx配置文件，可根据vps的cpu核心数更改进程数最大限度利用
+
+/etc/php5/fpm/php.ini #php配置文件
+
+~/.my.cnf #mysql root密码保存文件
+
+/etc/nginx/conf.d/ #nginx下各个具体网站配置文件所在文件夹
+```
+
+# 日志Log文件列表
+```
+/var/log/nginx #nginx的log文件所在文件夹，所有网站都在一个文件中
+
+/var/log/php5-fpm.log #php的log文件，所有网站都在一个文件中
+```
+
+# Tyleamp.sh相关命令列表参考
+
+这些都是系统自带的, 列出来供参考
+```
+#MySQL命令
+
+service mysql {start|stop|status|restart|reload|force-reload}
+
+#Nginx命令
+
+service nginx {start|stop|status|restart|reload|force-reload}
+
+#查看php版本, 例如7.0.33-0+deb9u8, 大版本就是7.0
+
+php -v
+
+#查看php版本, Debian9的大版本号是php7.0, 则
+
+service php7.0-fpm {start|stop|status|restart|reload|force-reload}
+```
